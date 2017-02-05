@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset=utf-8>
+	<title>注册界面</title>
+</head>
+<body background="../image/Garr_rush.jpg" style="background-repeat:no-repeat;
+background-size:100% 100%;background-attachment: fixed;color:white
+">	<!--插入背景图片,且自适应-->
+欢迎注册
+<br><br>
+	<div style="text-align:left;font-size:2em">
+ <form action="../php/signup_x.php" method="post" enctype="multipart/form-data">
+ 	<input type="file" name="headimage" >	上传头像<br><br>
+ 	<input type="text" name="name" style="font-size:1em">  姓名<br>
+ 	<input type="radio" id="man" name="sex"  value="男"><label for="man">男
+ 	</label>
+	<input type="radio" id="woman" name="sex" checked value="女"><label for="woman">女</label> 性别<br><br>
+	<input type="number" name="age" style="font-size:1em"
+	onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();">	年龄<br><br>
+	<input type="text" name="sid" style="font-size:1em" 
+	onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();">  学号<br><br>	<!-- onkeyup...只允许数字输入 -->
+	<input type="text" name="phone" style="font-size:1em"
+	onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();">	手机号<br><br>
+	<input type="password" name="password" style="font-size:1em">  密码<br><br>
+	<input type="submit" value="注册" style="font-size:1em">
+	</form>	
+	</div>
+
+<div style="text-align:right;font-size:2em;color:white;">
+<a href="../index.html" style="color:white">back</a>
+</div>
+
+</body>
+</html>
+	

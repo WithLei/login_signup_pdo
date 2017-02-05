@@ -1,2 +1,6 @@
 # login_signup_pdo
-php PDO
+login and signup
+use php in PDO
+host=localhost
+dbname=mysystem->student
+#name:id,name,sex,age,sid,phone,password,score,Timestamp
